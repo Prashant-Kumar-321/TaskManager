@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=`, initial-scale=1.0">
+	<title>Tasks-Manager</title>
+	<!-- Add favicon -->
+
+	<!-- Add django template url  -->
+	<!-- {% static 'tasks/styles.css'  %} -->	
+	<link rel="stylesheet" href="../../static/tasks/styles.css">
+</head>
+<body>
+	<header class="header">
+		<h1>Task Manager</h1>
+	</header>
+	<main class="hero">
+		<section class="action">
+			<form action="" method="" class="task-input-form">
+				<div class="task">
+					<input type="text" name="task" id="task" required placeholder="Task...">
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="btn">Add</button>
+				</div>
+			</form>
+		</section>
+
+		<section class="tasks-list-container">
+			<div class="tasks">
+
+				<div class="task-container"> <!-- one task  -->
+					<div class="tasks">Task One</div>
+					<div class="btns">
+						<div class="btn done">Done</div>
+						<div class="btn pending">Pending</div>
+					</div>
+				</div>
+
+				<div class="task-container"> 
+					<div class="tasks">Task Two</div>
+					<div class="btns">
+						<div class="btn done">Done</div>
+						<div class="btn pending">Pending</div>
+					</div>
+				</div>
+
+				<div class="task-container"> 
+					<div class="tasks">Task Three</div>
+					<div class="btns">
+						<div class="btn done">Done</div>
+						<div class="btn pending">Pending</div>
+					</div>
+				</div>
+
+			</div>
+		
+		</section>
+	</main>
+</body>
+</html>
