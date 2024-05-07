@@ -61,9 +61,10 @@ header{
 	margin-bottom: 1rem; 
 }
 
-.task-input-form .task input{
+.task-input-form .task #task-field {
 	font-size: 1rem; 
-	width: 100%; 
+	min-width: 100%; 
+	max-width: 100%; 
 	padding: 0.7rem; 
 	font-family: inherit; 
 	border-radius: 5px;
@@ -105,8 +106,6 @@ section.tasks-list-container .task-container .task {
 	flex-grow: 1; 
 	overflow: auto;
 	max-height: 150px; 
-	/* max-height: 100%;  */
-	overflow: auto; 
 }
 
 section.tasks-list-container .task-container .btns{
@@ -121,4 +120,66 @@ section.tasks-list-container .task-container .btns .btn {
 	border: 2px solid white; 
 	padding: 0.3rem; 
 	border-radius: 10px; 
+}
+
+
+
+
+/* Responsive css style */
+
+/* Extra larger screen */
+@media  screen and (min-width: 1214px) {
+	/* Don't change any style
+		leave as it is
+	*/	
+}
+
+
+/* LARGE SCREEN */
+
+@media screen and (min-width: 992px) and (max-width: 1213px) {
+	section.tasks-list-container .task-container{
+		max-height: 250px; 
+		display: flex; 
+		flex-direction: column; 
+		align-items: flex-start; 
+	}
+
+	section.tasks-list-container .task-container .btns{
+		align-self: flex-end;
+	}
+}
+
+/* MEDIUM SCREEN */
+
+@media screen and (max-width: 992px){
+	.hero{
+		flex-direction: column; 
+	}
+
+	/* .hero{
+		height: auto; 
+	} */
+
+	.action {
+		padding: 0.8rem; 
+		width: 100%; 
+	}
+	
+	.tasks-list-container {
+		width: 100%; 
+	}
+
+	section.tasks-list-container .task-container{
+		border: 2px solid white; 
+		width: 100%; 
+		max-height: none; 
+		height: auto;
+		margin-bottom: 1rem; 
+		padding: 0.8rem; 
+		display: flex; 
+		justify-content: space-between;
+		align-items: center; 
+		gap: 10px; 
+	}
 }
